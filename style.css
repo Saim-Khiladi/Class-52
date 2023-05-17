@@ -1,80 +1,65 @@
-.menu{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    padding: 15px;
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: 400;
-    color: white;
-}
-body{
-    margin: 0px;
-    background-color:#f7f2f2;
-   
-}
-a{
-    text-decoration :none
-}
-a:link{
-    color:#ffffff;
-}
+        h1{
+                color:rgb(255, 174, 0);
+            }
+           /* *{
+              border: solid;  
+            }*/
 
-/*a:old*/
-/*a:clicked*/
-/*a:seen{*/
-a:visited{
-    color: #ffffff;
-}
+            .header{
+                background-color: #AB3F91;
+                display:flex;
+                justify-content: space-between;
 
-.bodyimg{
-    position: relative;
-}
-.bodyimg p{
-    color:#f7f2f2;
-    font-size: 55px;
-    font-family: fantasy;
-    position: absolute;
-    top:10%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-.bodyimg h3{
-    color:#f7f2f2;
-    font-family: fantasy;
-    font-size: 30px;
-    width: 1600px;
-    position: absolute;
-    top:40%;
-    left:40%;
-    transform: translate(-40%, -40%);
-}
-.grid{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 40px;
-    font-family: sans-serif;
-    
-}
-.grid img{
-    border: 2px solid black;
-    border-radius: 50px;
-}
-.origami {
-    
-    border-radius: 20px;
-    background-color: #ffffff;
-    padding: 30px;
-    margin: 25px;
-    width:310px;
-    font-family: fantasy;
-    
-}
+            }
 
-.origami:hover{
-/*.origami : mouseover{*/
-/*.origami:link{*/
-/*origami:hover{*/
+            .item{
+                position: relative;
+            }
 
-    transform: scale(1.2);
-}
+            .item p{
+                position: absolute;
+                top :50%;
+                left :50%;
+                transform: translate(-50%,-50%);
+                opacity: 0;
+            }
+
+            .item:hover p {
+                opacity: 0.33;
+            }
+
+            .menu{
+                margin-right: 20px;
+                
+            }
+
+            .menu a{
+                margin-left: 20px;
+            }
+
+            .grid{
+                
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+            }
+
+            .footer{
+                display:flex;
+                justify-content: flex-end;
+            }
+
+            p,h2{
+               text-align: center;
+            }
+
+            h2{
+                color: #3e9deb;
+                font-size: 30px ;
+                margin: 30px;
+            }
+
+            body{
+                background-color: #808080;
+            }
